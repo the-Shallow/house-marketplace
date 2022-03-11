@@ -9,7 +9,8 @@ import Spinner from "../components/Spinner";
 import { toast } from "react-toastify";
 
 function CreateListing() {
-
+    
+  // eslint-disable-next-line
     const [geolocationEnabled, setGeoLocationEnabled] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -115,6 +116,8 @@ function CreateListing() {
                       break;
                     case 'running':
                       console.log('Upload is running');
+                      break;
+                    default:
                       break;
                   }
                 }, 
